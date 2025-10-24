@@ -3,7 +3,7 @@ from discord.ext import commands
 import os
 
 # Carga el token del bot desde las variables del entorno de Server.pro
-TOKEN = os.getenv("MTI5ODA1OTA2ODc5OTMyMDA2NA.Gh78hP.pxB_ekga71uFmElnz0lD4AfHlSlndPYvNH3b6w")
+TOKEN = os.getenv("TOKEN")
 
 # Puedes cambiar el prefijo de comandos si quieres (por ejemplo: ! o ?)
 bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
@@ -36,4 +36,4 @@ async def ping(ctx):
 if TOKEN is None:
     print("❌ No se encontró el token del bot. Asegúrate de configurarlo en las variables de entorno.")
 else:
-    bot.run(MTI5ODA1OTA2ODc5OTMyMDA2NA.Gh78hP.pxB_ekga71uFmElnz0lD4AfHlSlndPYvNH3b6w)
+    bot.run(TOKEN)
