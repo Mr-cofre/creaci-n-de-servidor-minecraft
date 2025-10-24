@@ -1,6 +1,8 @@
 import discord
 from discord.ext import commands
 import os
+from dotenv import load_dotenv
+load_dotenv()
 
 # Carga el token del bot desde las variables del entorno de Server.pro
 TOKEN = os.getenv("DISCORD_TOKEN")
